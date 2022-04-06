@@ -22,11 +22,11 @@ let homeShapeShift = [
 
 //If you just want to remove one element just map the inner arrays to new inner filtered arrays:
 let f1 = homeShapeShift.map((k) => k.filter((e) => e.text !== 'ZEC'));
-//console.log(f1);
+console.log(f1);
 
 //Or if you wanna remove the whole array use every to get a boolean:
 let f2 = homeShapeShift.filter((k) => k.every((e) => e.text !== 'ZEC'));
-console.log(f2);
+//console.log(f2);
 
 //that can be inversed too with some:
 let f3 = homeShapeShift.filter((k) => !k.some((e) => e.text === 'ZEC'));
